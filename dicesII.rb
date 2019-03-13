@@ -18,7 +18,6 @@ class Game
       #dices = Dices.new
       @dices << Dices.new
     end
-
   end
 
   def roll_all_dices
@@ -28,7 +27,6 @@ class Game
   end
 
   def calc_score
-
     @dices.each do |dice|
       @score += dice.side
     end
@@ -48,7 +46,6 @@ class Game
   def reset
     @score = 0
   end
-
 end
 
 juego = Game.new(5)

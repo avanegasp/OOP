@@ -18,3 +18,12 @@ def factorial(num)
 end
 
 p factorial(4)
+
+
+
+
+names = [1,2,3,4,5,6,7,8,9]
+
+num = names.shuffle
+
+p num
