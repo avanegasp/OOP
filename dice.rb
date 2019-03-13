@@ -1,5 +1,5 @@
 class Dice
-  def initialize(side=1)
+  def initialize(side)
     @side = side
   end
 
@@ -33,7 +33,13 @@ class Game
   end
 end
 
-game = Game.new(4)
-game.print_all_dices
-game.roll_all_dices
-game.print_all_dices
+dice = Dice.new(1)
+p dice.roll
+p dice.returnDice
+# game = Game.new(4)
+# p game
+# game = Game.new(4)
+# p game
+# game.print_all_dices
+# game.roll_all_dices
+# game.print_all_dices

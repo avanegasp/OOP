@@ -11,7 +11,11 @@ class Persona
     @edad = 0
   end
 
-  def edad=(edad)
+  def name(name) #getter Método para que @name sea leído desde afuera
+    @name = name
+  end
+
+  def edad=(edad) #setter Método para que @name sea modificado desde afuera
     @edad = edad
   end
 
@@ -20,7 +24,7 @@ class Persona
   end
 
   def sayHi
-    puts "Hola soy #{@name} #{@lastName} y tengo #{@edad} años"
+    puts "Hola soy #{@name} #{@lastName} y tengo #{@edad}"
   end
 end
 
